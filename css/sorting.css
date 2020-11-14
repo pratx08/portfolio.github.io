@@ -1,0 +1,84 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+.back
+{
+    z-index: 99;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+}
+
+.back img
+{
+    margin-top: 0.5%;
+    margin-left: 5%;
+    height: 45px;
+    width: 45px;
+    float: left;
+}
+.back a
+{
+    margin-top: 5%;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.top
+{
+    text-align: center;
+}
+
+.gallery
+{
+    width: 100%;
+    height: 200%;
+}
+
+.pic1 img
+{
+    margin-top: 3%;
+    margin-left: 25%;
+    width: 800px;
+    height: 600px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+}
+
+.pic2 img
+{
+    margin-top: 3%;
+    margin-left: 25%;
+    width: 800px;
+    height: 600px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+}
+
+
+.pic3 img
+{
+    margin-top: 3%;
+    margin-left: 25%;
+    width: 800px;
+    height: 600px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+}
