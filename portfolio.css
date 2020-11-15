@@ -1,9 +1,8 @@
-html
-{
+html {
     scroll-behavior: smooth;
 }
-body
-{
+
+body {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -11,8 +10,12 @@ body
 }
 
 
-#navbar
-{
+
+html,body{
+    overflow-x: hidden;
+}
+
+#navbar {
     padding: 10px 5px;
     overflow: hidden;
     background-color: #000000;
@@ -23,8 +26,7 @@ body
     z-index: 99;
 }
 
-#navbar a
-{
+#navbar a {
     float: left;
     color: white;
     text-align: center;
@@ -35,101 +37,117 @@ body
     border-radius: 4px;
 }
 
-#navbar #logo 
-{
+#navbar #logo {
     font-size: 25px;
     transition: 0.4s;
 }
 
-#navbar a:hover 
-{
+#navbar a:hover {
     background-color: #ddd;
     color: black;
 }
 
-#navbar a.active 
-{
+#navbar a.active {
     background-color: dodgerblue;
     color: white;
 }
 
-#navitems 
-{
+#navitems {
     margin-right: 2%;
     float: right;
 }
 
-@media screen and (max-width: 580px) 
-{
-    #navbar 
-    {
-      padding: 20px 10px !important;
-    }
-    #navbar a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
-      #navbar-right {
-        float: none;
-      }
-}
+/*@media screen and (max-width: 580px) */
+/*{*/
+/*    #navbar */
+/*    {*/
+/*      padding: 20px 10px !important;*/
+/*    }*/
+/*    #navbar a {*/
+/*        float: none;*/
+/*        display: block;*/
+/*        text-align: left;*/
+/*      }*/
+/*      #navbar-right {*/
+/*        float: none;*/
+/*      }*/
+/*}*/
 
 /*-----------------------------------------------------------------------FIRST DIVISION-----------------------------------------------------------------*/
 
-canvas
-{
-    width: 100%;
-    height:100vh;
+canvas {
     
+    width: 100%;
+    height: 100vh;
+
 }
-  
-#particles
-{
-    background: url("bg.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+
+#particles {
+    min-height: 100vh;
+    max-height: fit-content;
+    width: 100%;
+    background: url("bg.png") no-repeat fixed center;
     background-size: cover;
     position: relative;
 }
-.text 
-{
-	position: absolute;
-	top: 50%;
-	right: 50%;
-	transform: translate(50%,-50%);
-	color: #fff;
-	max-width: 90%;
-	padding: 2em 3em;
-	background: rgba(0, 0, 0, 0.6);
-	text-shadow: 0px 0px 2px #131415;
+
+.text {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: #fff;
+    max-width: 90%;
+    padding: 2em 3em;
+    background: rgba(0, 0, 0, 0.6);
+    text-shadow: 0px 0px 2px #131415;
     font-family: 'Open Sans', sans-serif;
     border-radius: 30px;
 }
 
-.text h1 
-{
-	font-size: 3.25em;
-	font-weight: 700;
-	letter-spacing: 1px;
+.text h1 {
+    font-size: 3.25em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 803px) {
+    /* #particles {
+        width: 100vh;
+    }
+
+    #about {
+        width: 100vh !important;
+    }
+
+    #skills-heading {
+        width: 100vh !important;
+    }
+
+    #fourth-div {
+        width: 100vh !important;
+    }
+    #fifth-div{
+        width: 100vh !important;
+    } */
+
 }
 
 /*-------------------------------------------------------------------ABOUT SECTIOM------------------------------------------------------------------------*/
-#about
-{
+#about {
     margin-top: 4%;
     width: 100%;
-    height: 100%;
+    height: max-content;
+    min-height: 100vh;
 }
-#about h1
-{
+
+#about h1 {
     margin-top: 2%;
     text-align: center;
 }
-#about #pic img
-{
-    margin-left: 15%;
+
+#about #pic img {
+    margin-left: 25%;
     height: 300px;
     width: 300px;
     float: left;
@@ -137,37 +155,40 @@ canvas
     border-radius: 50%;
 }
 
-#about #content
-{
+#about #content {
     margin-top: 5%;
     font-size: 18px;
-    width: 50%;
-    margin-right: 2%;
+
     float: right;
 }
 
 [aos="fade"] {
     opacity: 0;
     transition-property: opacity;
-  }
-  
-  [aos="fade"].aos-animate {
+}
+
+[aos="fade"].aos-animate {
     opacity: 1;
-  }
+}
+
+@media screen and (max-width:770px) {
+    #about #content {
+        padding: 10%;
+    }
+}
 
 /*-----------------------------------------------------------------------SKILLS SECTION-------------------------------------------------------------------*/
 
 
-#skills-heading h1
-{
+#skills-heading h1 {
     text-align: center;
     color: #ffffff;
 }
 
-#skills-heading
-{
+#skills-heading {
+    padding-top: 40px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: url("wood-bg.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -176,15 +197,13 @@ canvas
     position: relative;
 }
 
-.container
-{
+.container {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.container .skills
-{
+.container .skills {
     position: relative;
     display: flex;
     margin: 20px 0;
@@ -197,22 +216,19 @@ canvas
 
 
 
-.container .skills .Name
-{
+.container .skills .Name {
     position: relative;
     width: 110px;
     color: #fff;
 }
 
-.container .skills .per-value
-{
+.container .skills .per-value {
     position: relative;
     width: 110px;
     color: #fff;
 }
 
-.container .skills .percentage
-{
+.container .skills .percentage {
     position: relative;
     width: calc(100% - 150px);
     height: 20px;
@@ -223,8 +239,7 @@ canvas
     overflow: hidden;
 }
 
-.container .skills .percentage .progress
-{
+.container .skills .percentage .progress {
     position: absolute;
     top: 0;
     left: 0;
@@ -233,46 +248,50 @@ canvas
     border-radius: 10px;
     background: linear-gradient(45deg, #3bc0ff, #33ff00);
     box-shadow: inset 0 0 2px #000;
-    animation: animate 2s ease-in-out forwards;   
+    animation: animate 2s ease-in-out forwards;
 }
 
-@keyframes animate
-{
-    from
-    {
+@keyframes animate {
+    from {
         width: 0;
     }
 }
 
-.container:hover .skills
-{
+.container:hover .skills {
     opacity: 0.05;
 }
 
-.container .skills:hover
-{
+.container .skills:hover {
     opacity: 1;
 }
 
-.skill-section
-{
+.skill-section {
     margin-top: 5%;
     width: 600px;
     height: 400px;
+    max-width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    margin-left: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 /*--------------------------------------------------------------------PROJECTS-----------------------------------------------------------*/
 
-#fourth-div h2
-{
-    text-align: center;
+.card-style {
+    padding: 4% !important;
+}
+
+#fourth-div .fourth-heading {
+    margin-left: 50%;
     font-size: 35px;
 }
-#fourth-div
-{
-    width: 100%;
-    height: 100%;
+
+#fourth-div {
+    /* width: 100vh; */
+    min-height: 100vh;
+    height: max-content;
+
+    padding-right: 100px;
     background: url("waterpaint-bg.jpg");
     justify-content: center;
     overflow: hidden;
@@ -282,15 +301,16 @@ canvas
     background-size: cover;
     position: relative;
 }
-.card
-{
+
+.card-project {
     margin-left: 10%;
     float: left;
-    width: 20%;
-    display: grid;
+    width: 100%;
+    /* display: grid; */
+    height: max-content;
     grid-template-columns: 300px;
     grid-template-rows: 210px 210px 80px;
-    grid-template-areas: "image" "text" "stats";
+    grid-template-areas: "image""text""stats";
     border-radius: 18px;
     background: white;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
@@ -299,8 +319,11 @@ canvas
     cursor: pointer;
 }
 
-.card-image
-{
+.first-card {
+    height: max-content;
+}
+
+.card-image {
     grid-area: image;
     margin-left: 2%;
     background-image: url("sorting.png");
@@ -309,27 +332,28 @@ canvas
     background-size: cover;
 }
 
-.card-text
-{
+.card-text {
+    margin-top: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     grid-area: text;
 }
 
-.card-stats
-{
+.card-stats {
+    padding-left: 100px;
+    overflow: hidden;
     background-color: rgb(153, 204, 255);
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    width: 101.4%;
+    width: 100%;
     text-align: center;
+    display: flex;
     color: white;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     grid-area: stats;
 }
 
-.card-stats .pic1 img
-{
+.card-stats .pic1 img {
     margin-top: 5%;
     margin-left: 30%;
     float: left;
@@ -337,8 +361,7 @@ canvas
     height: 50px;
 }
 
-.card-stats .pic2 img
-{
+.card-stats .pic2 img {
     width: 150px;
     height: 150px;
     margin-top: -33%;
@@ -347,25 +370,24 @@ canvas
 }
 
 
-.card2
-{
+.card2 {
+    overflow: hidden;
     margin-left: 10%;
     float: left;
-    width: 20%;
-    display: grid;
+    width: 100%;
+    /* display: grid; */
     grid-template-columns: 300px;
     grid-template-rows: 210px 210px 80px;
-    grid-template-areas: "image" "text" "stats";
+    grid-template-areas: "image""text""stats";
     border-radius: 18px;
     background: white;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    box-shadow: 5px 5px 15px rgba(126, 78, 78, 0.9);
     text-align: center;
     transition: 0.5s ease;
     cursor: pointer;
 }
 
-.card-image2
-{
+.card-image2 {
     grid-area: image;
     margin-left: 2%;
     margin-top: 3%;
@@ -374,14 +396,14 @@ canvas
     background-size: cover;
 }
 
-.card-text2
-{
+.card-text2 {
+    margin-top: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     grid-area: text;
 }
 
-.card-stats2
-{
+.card-stats2 {
+    height: 100px;
     background-color: rgb(255, 153, 153);
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -393,8 +415,7 @@ canvas
     grid-area: stats;
 }
 
-.card-stats2 .pic3 img
-{
+.card-stats2 .pic3 img {
     margin-left: 30%;
     margin-top: 5%;
     float: left;
@@ -402,8 +423,7 @@ canvas
     height: 50px;
 }
 
-.card-stats2 .pic4 img
-{
+.card-stats2 .pic4 img {
     margin-right: 30%;
     margin-top: 5%;
     float: right;
@@ -411,15 +431,16 @@ canvas
     height: 50px;
 }
 
-.card3
-{
+.card3 {
+
+    overflow: hidden;
     float: left;
     margin-left: 10%;
-    width: 20%;
-    display: grid;
+    width: 100%;
+    /* display: grid; */
     grid-template-columns: 300px;
     grid-template-rows: 210px 210px 80px;
-    grid-template-areas: "image" "text" "stats";
+    grid-template-areas: "image""text""stats";
     border-radius: 18px;
     background: white;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
@@ -428,9 +449,8 @@ canvas
     cursor: pointer;
 }
 
-.card-image3
-{
-    
+.card-image3 {
+
     grid-area: image;
     margin-left: 2%;
     margin-top: 3%;
@@ -440,15 +460,15 @@ canvas
     background-size: cover;
 }
 
-.card-text3
-{
+.card-text3 {
+    margin-top: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     grid-area: text;
 }
 
-.card-stats3
-{
-    background-color:rgb(153, 255, 153);
+.card-stats3 {
+    height: 100px;
+    background-color: rgb(153, 255, 153);
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     width: 101.5%;
@@ -461,23 +481,37 @@ canvas
 
 
 
-.card:hover, .card2:hover, .card3:hover
-{
+.card:hover,
+.card2:hover,
+.card3:hover {
     transform: scale(1.05);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
 }
 
 /*------------------------------------------------------------------------CONTACT-----------------------------------------------------------------*/
 
-#fifth-div
-{
+#fifth-div {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: black;
 }
 
-.fifth-heading h2
-{
+.social {
+    margin-top: 300px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    max-width: 100%;
+    display: flex;
+    height: max-content;
+}
+.fifth-heading{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fifth-heading h2 {
     position: absolute;
     margin-top: 4%;
     margin-left: 45%;
@@ -485,67 +519,73 @@ canvas
     color: white;
     font-size: 35px;
 }
-
-.info h3
-{
-    position: absolute;
-    margin-top: 10%;
-    margin-left: 44%;
+.info{
+    margin-left: auto;
+    margin-right: auto;
+}
+.info h3 {
+    /* position: absolute; */
+    margin-top: 100px;
+    /* margin-left: 44%; */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     color: white;
 }
-.email img
-{
-    margin-left: 36%;
-    margin-top: 15%;
+
+.email img {
+
+    /* margin-left: 36%; */
+    /* margin-top: 15%; */
     width: 50px;
     height: 62px;
 }
-.linkedin img
-{
-    margin-top: -3.6%;
-    margin-left: 43%;
+
+.linkedin img {
+    margin-left: 40px;
+    margin-top: 10%;
+    /* margin-left: 43%; */
     width: 45px;
     height: 47px;
 }
 
-.discord img
-{
-    margin-left: 49%;
-    margin-top: -3.6%;
+.discord img {
+    
+    margin-left: 40px;
+    /* margin-left: 49%; */
+    margin-top: 10%;
     width: 60px;
     height: 44px;
 }
 
-.instagram img
-{
+.instagram img {
+    
+    margin-left: 20px;
     width: 70px;
     height: 61px;
-    margin-top: -4.2%;
-    margin-left: 55%;
+    /* margin-top: -4.2%; */
+    /* margin-left: 55%; */
 }
 
-.github img
-{
-    margin-top: -4.7%;
-    margin-left: 61%;
+.github img {
+    
+    margin-left: 15px;
+    margin-top: -5%;
+    /* margin-left: 61%; */
     width: 75px;
     height: 75px;
 }
 
 
-.feedback-section
-{
-    margin-top: 5%;
-    margin-left: 38%;
-    background: rgba( 255, 255, 255, 0.2);
+.feedback-section {
+   margin-left: auto;
+   margin-top: 32px;
+   margin-right: auto;
+    background: rgba(255, 255, 255, 0.2);
     height: 250px;
     width: 350px;
 }
 
-input[type=text]
-{
+input[type=text] {
     color: white;
     border: none;
     background-color: transparent;
@@ -555,8 +595,7 @@ input[type=text]
     width: 300px;
 }
 
-.message
-{
+.message {
     color: white;
     margin-top: 1%;
     border: none;
@@ -567,20 +606,23 @@ input[type=text]
     width: 300px;
 }
 
-::placeholder
-{
+::placeholder {
     color: white;
 }
 
-button
-{
+button {
     width: 100px;
     height: 30px;
     margin-left: 35%;
     border-radius: 15px;
 }
 
-.footer
-{
+.footer {
     text-align: center;
+}
+.btn{
+    margin-left: 120px;
+
+    margin-right: auto;
+    margin-top: 10px;
 }
