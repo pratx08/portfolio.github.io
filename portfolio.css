@@ -282,7 +282,8 @@ canvas {
 }
 
 #fourth-div .fourth-heading {
-    margin-left: 45%;
+    text-align: center;
+    justify-content: center;
     font-size: 35px;
 }
 
