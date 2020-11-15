@@ -498,7 +498,7 @@ canvas {
 }
 
 .social {
-    margin-top: 300px;
+    margin-top: 100px;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
@@ -520,6 +520,7 @@ canvas {
     color: white;
     font-size: 35px;
 }
+
 .info{
     margin-left: auto;
     margin-right: auto;
@@ -543,7 +544,7 @@ canvas {
 
 .linkedin img {
     margin-left: 40px;
-    margin-top: 10%;
+    margin-top: 5%;
     /* margin-left: 43%; */
     width: 45px;
     height: 47px;
@@ -578,11 +579,11 @@ canvas {
 
 
 .feedback-section {
-   margin-left: auto;
-   margin-top: 32px;
-   margin-right: auto;
+    margin-left: auto;
+    margin-top: 32px;
+    margin-right: auto;
     background: rgba(255, 255, 255, 0.2);
-    height: 250px;
+    height: 280px;
     width: 350px;
 }
 
@@ -611,19 +612,13 @@ input[type=text] {
     color: white;
 }
 
-button {
-    width: 100px;
-    height: 30px;
-    margin-left: 35%;
-    border-radius: 15px;
-}
 
 .footer {
     text-align: center;
 }
 .btn{
-    margin-left: 120px;
-
+    margin-left: 130px;
+    background-color: white;
     margin-right: auto;
     margin-top: 10px;
 }
