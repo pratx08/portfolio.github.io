@@ -300,7 +300,7 @@ canvas {
 }
 
 .card-project {
-    margin-left: 10%;
+    margin-left: 15%;
     float: left;
     width: 100%;
     /* display: grid; */
@@ -369,7 +369,7 @@ canvas {
 
 .card2 {
     overflow: hidden;
-    margin-left: 10%;
+    margin-left: 15%;
     float: left;
     width: 100%;
     /* display: grid; */
@@ -432,7 +432,7 @@ canvas {
 
     overflow: hidden;
     float: left;
-    margin-left: 10%;
+    margin-left: 15%;
     width: 100%;
     /* display: grid; */
     grid-template-columns: 300px;
@@ -494,7 +494,7 @@ canvas {
 }
 
 .social {
-    margin-top: 100px;
+    margin-top: 90px;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
